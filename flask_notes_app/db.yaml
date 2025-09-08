@@ -1,0 +1,5 @@
+mysql_host: 'localhost'
+mysql_user: 'flaskuser'
+mysql_password: 'your_strong_password' # IMPORTANT: Change this to the password you set
+mysql_db: 'logindb'
+

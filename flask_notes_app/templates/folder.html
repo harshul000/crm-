@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ folder.name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h2>Folder: {{ folder.name }}</h2>
+            <div>
+                <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+                <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
+            </div>
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <!-- Search Form -->
+        <div class="search-container">
+            <form action="{{ url_for('view_folder', folder_id=folder.id) }}" method="GET" class="inline-form">
+                <input type="text" name="search" placeholder="Search files..." value="{{ search_query or '' }}">
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+
+        <div class="form-container-split">
+            <div class="form-section">
+                <h3>Create a New Text File</h3>
+                <form action="{{ url_for('add_file', folder_id=folder.id) }}" method="POST" class="inline-form">
+                    <input type="text" name="text_file_name" placeholder="Enter text file name" required>
+                    <button type="submit" class="btn">Create Text File</button>
+                </form>
+            </div>
+            <div class="form-section">
+                <h3>Upload a File</h3>
+                <form action="{{ url_for('add_file', folder_id=folder.id) }}" method="POST" enctype="multipart/form-data" class="inline-form">
+                    <input type="file" name="uploaded_file" required>
+                    <button type="submit" class="btn">Upload</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="items-list">
+            <h3>Files in this Folder</h3>
+            {% for file in files %}
+                <div class="list-item">
+                    {% if file.file_type == 'text' %}
+                        <a href="{{ url_for('view_file', file_id=file.id) }}" class="item-link">
+                            <div class="item-icon">📝</div>
+                            <div class="item-name">{{ file.name }}</div>
+                        </a>
+                    {% else %}
+                        <a href="{{ url_for('download_file', file_id=file.id) }}" class="item-link">
+                            <div class="item-icon">📄</div>
+                            <div class="item-name">{{ file.name }} (Click to download)</div>
+                        </a>
+                    {% endif %}
+                    <div class="item-actions">
+                        <!-- Rename Form -->
+                        <form action="{{ url_for('rename_file', file_id=file.id) }}" method="POST" class="action-form">
+                            <input type="text" name="new_name" placeholder="New name" required>
+                            <button type="submit" class="btn btn-small btn-rename">Rename</button>
+                        </form>
+                        <!-- Delete Form -->
+                        <form action="{{ url_for('delete_file', file_id=file.id) }}" method="POST" class="action-form">
+                            <button type="submit" class="btn btn-small btn-delete" onclick="return confirm('Are you sure you want to delete this file?');">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            {% else %}
+                {% if search_query %}
+                    <p>No files found matching your search.</p>
+                {% else %}
+                    <p>This folder is empty. Create a file or upload one above!</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* --- General & Login/Signup Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 4rem auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.form-group input, .inline-form input[type="text"], .inline-form input[type="file"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-success { color: #155724; background-color: #d4edda; border-color: #c3e6cb; }
+.alert-danger { color: #721c24; background-color: #f8d7da; border-color: #f5c6cb; }
+.alert-warning { color: #856404; background-color: #fff3cd; border-color: #ffeeba; }
+
+.form-link { text-align: center; margin-top: 1.5rem; color: #555; }
+.form-link a { color: #007bff; text-decoration: none; font-weight: 600; }
+.form-link a:hover { text-decoration: underline; }
+
+/* --- Dashboard & Main Layout --- */
+.dashboard-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-header h2 { margin: 0; text-align: left; }
+
+.search-container { margin-bottom: 1.5rem; }
+.inline-form { display: flex; gap: 1rem; }
+.inline-form input[type="text"] { flex-grow: 1; }
+
+.form-container, .form-container-split {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.form-container-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.form-section h3 { margin-top: 0; margin-bottom: 1rem; font-size: 1.1rem; }
+
+/* --- Item Lists (Folders & Files) --- */
+.items-list { margin-top: 2rem; }
+.list-item { display: flex; align-items: center; justify-content: space-between; padding: 1rem; border-radius: 8px; transition: background-color 0.2s ease; }
+.list-item:nth-child(odd) { background-color: #f9f9f9; }
+.list-item:hover { background-color: #f1f1f1; }
+
+.item-link { display: flex; align-items: center; text-decoration: none; color: #333; flex-grow: 1; }
+.item-icon { font-size: 2rem; margin-right: 1rem; }
+.item-name { font-weight: 600; word-break: break-all; }
+
+.item-actions { display: flex; gap: 0.5rem; flex-shrink: 0; margin-left: 1rem;}
+.action-form { display: flex; gap: 0.5rem; }
+.btn-small { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
+.btn-rename { background-color: #ffc107; }
+.btn-rename:hover { background-color: #e0a800; }
+.btn-delete { background-color: #dc3545; }
+.btn-delete:hover { background-color: #c82333; }
+
+/* --- Editor Styles --- */
+.editor-container { margin-top: 2rem; }
+.btn-save { display: block; width: 100%; }
+
+/* --- Video Call Styles --- */
+.video-call-container { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1.5rem; }
+#remote-player-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+.video-player { width: 100%; height: auto; aspect-ratio: 4/3; background-color: #000; border-radius: 8px; }
+.video-controls { text-align: center; margin-top: 1.5rem; }
+.btn-secondary { background-color: #6c757d; }
+.btn-secondary:hover { background-color: #5a6268; }
+
+/* --- Chat Styles --- */
+.chat-container { display: flex; flex-direction: column; height: 65vh; border: 1px solid #eee; border-radius: 8px; margin-top: 1.5rem; }
+.chat-messages { flex-grow: 1; padding: 1rem; overflow-y: auto; background-color: #fdfdfd; }
+.message { margin-bottom: 0.75rem; padding: 0.5rem 1rem; border-radius: 15px; max-width: 80%; line-break: anywhere; }
+.message strong { color: #007bff; }
+.chat-form { display: flex; padding: 1rem; border-top: 1px solid #eee; background-color: #f9f9f9; }
+#message-input { flex-grow: 1; border: 1px solid #ccc; padding: 0.75rem; border-radius: 5px; margin-right: 1rem; }
+
+

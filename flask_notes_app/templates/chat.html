@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Socket.IO Client Library -->
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h2>Live Chat</h2>
+            <div>
+                <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+                <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="messages">
+                <!-- Chat history from server -->
+                {% for message in messages %}
+                    <div class="message">
+                        <strong>{{ message.username }}:</strong> {{ message.content }}
+                    </div>
+                {% endfor %}
+            </div>
+            <form class="chat-form" id="chat-form">
+                <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Connect to the Socket.IO server
+            const socket = io();
+            const messagesDiv = document.getElementById('messages');
+            const chatForm = document.getElementById('chat-form');
+            const messageInput = document.getElementById('message-input');
+
+            // Function to add a message to the chat window
+            const addMessage = (data) => {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message');
+                // Use .textContent to prevent HTML injection
+                const userStrong = document.createElement('strong');
+                userStrong.textContent = `${data.username}: `;
+                messageElement.appendChild(userStrong);
+                messageElement.append(document.createTextNode(data.msg));
+                messagesDiv.appendChild(messageElement);
+                // Auto-scroll to the bottom
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            };
+
+            // Listen for incoming messages from the server
+            socket.on('message', function(data) {
+                addMessage(data);
+            });
+
+            // Handle form submission
+            chatForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const message = messageInput.value.trim();
+                if (message) {
+                    socket.send(message);
+                    messageInput.value = ''; // Clear input field
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing: {{ file.name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- TinyMCE Script -->
+    <script src="https://cdn.tiny.cloud/1/ydkwwumdubezej8jgwh73p5wmlc7qcg1q5nkwtsdwur4wmut/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h2>Editing: {{ file.name }}</h2>
+            <div>
+                <a href="{{ url_for('view_folder', folder_id=file.folder_id) }}" class="btn btn-secondary">Back to Folder</a>
+                <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
+            </div>
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <div class="editor-container">
+            <form action="{{ url_for('view_file', file_id=file.id) }}" method="POST">
+                <textarea id="editor" name="content">{{ file.content|safe }}</textarea>
+                <button type="submit" class="btn btn-save" style="margin-top: 1rem;">Save File</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            tinymce.init({
+                selector: '#editor',
+                plugins: 'autolink lists link image charmap print preview hr anchor pagebreak',
+                toolbar_mode: 'floating',
+                height: 500
+            });
+        });
+    </script>
+</body>
+</html>
