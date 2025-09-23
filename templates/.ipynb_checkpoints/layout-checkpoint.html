@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Admin">
+    
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='icons/icon-192.png') }}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% block title %}Admin Dashboard{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body { overflow-y: scroll; }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="relative min-h-screen md:flex">
+        <!-- Mobile Nav Toggle -->
+        <div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+            <a href="{{ url_for('index') }}" class="block p-4 text-white font-bold">Admin Panel</a>
+            <button id="menu-btn" class="p-4 focus:outline-none focus:bg-gray-700">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Sidebar -->
+        <aside id="sidebar" class="bg-gray-800 text-gray-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out z-20">
+            <a href="{{ url_for('index') }}" class="text-white text-2xl font-semibold px-4 hidden md:flex items-center space-x-2">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Admin Panel</span>
+            </a>
+            <nav>
+                <a href="{{ url_for('index') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white {% if request.endpoint == 'index' %}bg-gray-700{% endif %}">
+                    <i class="fas fa-home mr-2"></i> Dashboard
+                </a>
+                <a href="{{ url_for('products') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white {% if request.endpoint == 'products' %}bg-gray-700{% endif %}">
+                    <i class="fas fa-box mr-2"></i> Products
+                </a>
+                 <!-- NEW (CALENDAR): Add a link in the sidebar to the new calendar page. -->
+                <a href="{{ url_for('calendar') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white {% if request.endpoint == 'calendar' %}bg-gray-700{% endif %}">
+                    <i class="fas fa-calendar-alt mr-2"></i> Calendar
+                </a>
+                <a href="{{ url_for('orders') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white {% if request.endpoint == 'orders' %}bg-gray-700{% endif %}">
+                    <i class="fas fa-shopping-cart mr-2"></i> Orders
+                </a>
+                <!-- NEW: Link to the logs page -->
+                <a href="{{ url_for('view_logs') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white {% if request.endpoint == 'view_logs' %}bg-gray-700{% endif %}">
+                    <i class="fas fa-file-alt mr-2"></i> View Logs
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-4 sm:p-6 lg:p-8">
+            <h1 class="text-2xl font-bold text-gray-800 mb-6">{% block page_title %}{% endblock %}</h1>
+            
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <div class="mb-4">
+                    {% for category, message in messages %}
+                        <div class="p-4 rounded-md {% if category == 'danger' %}bg-red-100 text-red-700{% elif category == 'success' %}bg-green-100 text-green-700{% else %}bg-blue-100 text-blue-700{% endif %}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+
+        btn.addEventListener('click', () => {
+            sidebar.classList.toggle('-translate-x-full');
+        });
+    </script>
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/static/service-worker.js')
+        .then(() => console.log('Service worker registered'));
+    }
+        document.getElementById(4).style.color = "black"
+     document.getElementById(2).style.color = "black"
+        document.getElementById(3).style.color = "black"
+        document.getElementById('product_price').style.color = "black"
+        document.getElementById('product_name').style.color = "black"
+        
+
+</script>
+
+</body>
+</html>
+

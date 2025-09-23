@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}Application Logs{% endblock %}
+{% block page_title %}Application Logs{% endblock %}
+
+{% block content %}
+<div class="bg-white p-6 rounded-lg shadow-lg">
+    <p class="text-sm text-gray-600 mb-4">
+        This page shows the most recent events from the application log file (`app.log`). Newest entries are at the top.
+    </p>
+    <div class="bg-gray-900 text-white font-mono text-xs p-4 rounded-lg overflow-x-auto h-96">
+        <!-- Pre tag preserves whitespace and line breaks from the log file -->
+        <pre><code>{% for line in logs %}{{ line }}{% else %}Log is empty.{% endfor %}</code></pre>
+    </div>
+</div>
+{% endblock %}
