@@ -1,3 +1,5 @@
 *.tar.gz
 crm/backup-*.tar.gz
 
+*.tar.gz
+crm/backup-*.tar.gz
