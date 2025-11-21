@@ -1,0 +1,1319 @@
+2025-09-22 09:12:17,968 - ERROR - Failed to send WhatsApp alert for Order ID: 53. Error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 82, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM,
+        body=message_body,
+        to=ADMIN_WHATSAPP_TO
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2025-09-22 09:14:18,326 - INFO - Attempting to send WhatsApp alert for Order ID: 54 to whatsapp:+19999999999
+2025-09-22 09:14:18,376 - ERROR - Failed to send WhatsApp alert for Order ID: 54. Error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 82, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM,
+        body=message_body,
+        to=ADMIN_WHATSAPP_TO
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2025-09-22 09:15:04,822 - INFO - Attempting to send WhatsApp alert for Order ID: 55 to whatsapp:+19999999999
+2025-09-22 09:15:04,871 - ERROR - Failed to send WhatsApp alert for Order ID: 55. Error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 82, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM,
+        body=message_body,
+        to=ADMIN_WHATSAPP_TO
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2025-09-22 09:18:04,530 - INFO - Attempting to send WhatsApp alert for Order ID: 56 to whatsapp:+19999999999
+2025-09-22 09:18:04,589 - ERROR - Failed to send WhatsApp alert for Order ID: 56. Error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 82, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM,
+        body=message_body,
+        to=ADMIN_WHATSAPP_TO
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2025-09-22 09:40:10,018 - INFO - Attempting to send WhatsApp alert for Order ID: 57 to whatsapp:+19999999999
+2025-09-22 09:40:10,182 - ERROR - Failed to send WhatsApp alert for Order ID: 57. Error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 82, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM,
+        body=message_body,
+        to=ADMIN_WHATSAPP_TO
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2025-09-22 13:33:03,037 - INFO - Attempting to send WhatsApp alert for Order ID: 58 to whatsapp:+19999999999
+2025-09-22 13:33:03,183 - ERROR - Failed to send WhatsApp alert for Order ID: 58. Error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 82, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM,
+        body=message_body,
+        to=ADMIN_WHATSAPP_TO
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2025-09-22 13:34:15,431 - INFO - Attempting to send WhatsApp alert for Order ID: 59 to whatsapp:+19999999999
+2025-09-22 13:34:15,475 - ERROR - Failed to send WhatsApp alert for Order ID: 59. Error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 82, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM,
+        body=message_body,
+        to=ADMIN_WHATSAPP_TO
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/your_account_sid/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authentication Error - invalid username[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2025-09-23 09:20:23,142 - INFO - Admin Dashboard application starting up...
+2025-09-23 09:20:24,042 - INFO - Admin Dashboard application starting up...
+2025-09-23 09:24:34,325 - INFO - Admin Dashboard application starting up...
+2025-09-23 09:24:38,340 - INFO - Admin Dashboard application starting up...
+2025-09-23 09:24:40,353 - INFO - Admin Dashboard application starting up...
+2025-09-23 09:26:26,951 - INFO - Admin Dashboard application starting up...
+2025-09-23 09:50:40,352 - INFO - Admin Dashboard application starting up...
+2025-09-23 09:50:41,059 - INFO - Admin Dashboard application starting up...
+2025-09-23 09:53:08,610 - INFO - Admin Dashboard application starting up...
+2025-09-23 09:53:09,174 - INFO - Admin Dashboard application starting up...
+2025-09-23 10:05:28,816 - INFO - Admin Dashboard application starting up...
+2025-09-23 10:05:29,411 - INFO - Admin Dashboard application starting up...
+2025-09-23 10:10:12,136 - INFO - Admin Dashboard application starting up...
+2025-09-23 10:11:44,726 - INFO - Admin Dashboard application starting up...
+2025-09-23 10:12:27,848 - INFO - Admin Dashboard application starting up...
+2025-09-23 10:12:28,066 - INFO - Admin Dashboard application starting up...
+2025-09-23 10:12:28,077 - INFO - Admin Dashboard application starting up...
+2025-09-23 10:21:10,560 - INFO - Attempting to send WhatsApp alert for Order ID: 60 to whatsapp:+917023145266
+2025-09-23 10:21:10,969 - ERROR - Failed to send WhatsApp alert for Order ID: 60. Error: HTTP 401 error: Unable to create record: Authenticate
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 79, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authenticate
+2025-09-23 10:49:54,619 - INFO - Attempting to send WhatsApp alert for Order ID: 61 to whatsapp:+917023145266
+2025-09-23 10:49:54,724 - ERROR - Failed to send WhatsApp alert for Order ID: 61. Error: HTTP 401 error: Unable to create record: Authenticate
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 79, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authenticate
+2025-09-23 10:50:51,370 - INFO - Attempting to send WhatsApp alert for Order ID: 62 to whatsapp:+917023145266
+2025-09-23 10:50:51,422 - ERROR - Failed to send WhatsApp alert for Order ID: 62. Error: HTTP 401 error: Unable to create record: Authenticate
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 79, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authenticate
+2025-09-23 10:52:18,851 - INFO - Admin Dashboard application starting up...
+2025-09-23 10:52:50,298 - INFO - Admin Dashboard application starting up...
+2025-09-23 11:00:24,175 - INFO - Attempting to send WhatsApp alert for Order ID: 63 to whatsapp:+917023145266
+2025-09-23 11:00:24,451 - INFO - WhatsApp alert sent successfully for Order ID: 63. Message SID: SMfa89aaff9a3a8afd32305668e8795b4c
+2025-09-23 11:08:32,538 - INFO - Attempting to send WhatsApp alert for Order ID: 64 to whatsapp:+917023145266
+2025-09-23 11:08:32,758 - INFO - WhatsApp alert sent successfully for Order ID: 64. Message SID: SM86c6a03288126ee6ef2f31fd7f36c6af
+2025-09-23 11:10:58,484 - INFO - Attempting to send WhatsApp alert for Order ID: 65 to whatsapp:+917023145266
+2025-09-23 11:10:58,642 - INFO - WhatsApp alert sent successfully for Order ID: 65. Message SID: SM698fec1f52aad919fd8877a0d08c61a3
+2025-09-23 11:36:05,415 - INFO - Attempting to send WhatsApp alert for Order ID: 66 to whatsapp:+917023145266
+2025-09-23 11:36:05,632 - INFO - WhatsApp alert sent successfully for Order ID: 66. Message SID: SM7a29e5511b98ed1bc45dbf9dfe94e341
+2025-09-23 11:39:41,464 - INFO - Attempting to send WhatsApp alert for Order ID: 67 to whatsapp:+917023145266
+2025-09-23 11:39:41,596 - INFO - WhatsApp alert sent successfully for Order ID: 67. Message SID: SMfd5ee12a93d1c103983644cefcaa3633
+2025-09-23 11:43:41,460 - INFO - Attempting to send WhatsApp alert for Order ID: 68 to whatsapp:+917023145266
+2025-09-23 11:43:41,609 - INFO - WhatsApp alert sent successfully for Order ID: 68. Message SID: SMe6c09df4357bd028de648bf5c61e23c1
+2025-09-23 11:56:34,068 - INFO - Admin Dashboard application starting up...
+2025-09-23 11:59:22,292 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:33:48,465 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:33:48,475 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:33:48,486 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:37:41,317 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:37:41,429 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:37:41,491 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:38:59,628 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:47:27,321 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:47:27,323 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:47:27,324 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:48:29,804 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:52:36,655 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:52:37,536 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:54:13,161 - INFO - Admin Dashboard application starting up...
+2025-09-24 06:54:13,847 - INFO - Admin Dashboard application starting up...
+2025-10-03 06:26:54,084 - INFO - Admin Dashboard application starting up...
+2025-10-03 06:27:01,856 - INFO - Admin Dashboard application starting up...
+2025-10-03 06:27:02,773 - INFO - Admin Dashboard application starting up...
+2025-10-06 10:42:59,307 - INFO - Admin Dashboard application starting up...
+2025-10-07 11:27:13,575 - INFO - Attempting to send WhatsApp alert for Order ID: 69 to whatsapp:+919999999999
+2025-10-07 11:27:14,091 - ERROR - Failed to send WhatsApp alert for Order ID: 69. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-10 13:01:15,996 - INFO - Attempting to send WhatsApp alert for Order ID: 70 to whatsapp:+919999999999
+2025-10-10 13:01:16,179 - ERROR - Failed to send WhatsApp alert for Order ID: 70. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-13 10:34:02,447 - INFO - Attempting to send WhatsApp alert for Order ID: 71 to whatsapp:+919999999999
+2025-10-13 10:34:02,593 - ERROR - Failed to send WhatsApp alert for Order ID: 71. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-13 10:35:02,612 - INFO - Attempting to send WhatsApp alert for Order ID: 72 to whatsapp:+919999999999
+2025-10-13 10:35:02,662 - ERROR - Failed to send WhatsApp alert for Order ID: 72. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-19 11:25:33,830 - INFO - Attempting to send WhatsApp alert for Order ID: 73 to whatsapp:+919999999999
+2025-10-19 11:25:34,028 - ERROR - Failed to send WhatsApp alert for Order ID: 73. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-19 11:29:14,682 - INFO - Attempting to send WhatsApp alert for Order ID: 74 to whatsapp:+919999999999
+2025-10-19 11:29:14,734 - ERROR - Failed to send WhatsApp alert for Order ID: 74. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-19 11:31:00,293 - INFO - Attempting to send WhatsApp alert for Order ID: 75 to whatsapp:+919999999999
+2025-10-19 11:31:00,400 - ERROR - Failed to send WhatsApp alert for Order ID: 75. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-19 11:31:56,717 - INFO - Attempting to send WhatsApp alert for Order ID: 76 to whatsapp:+919999999999
+2025-10-19 11:31:56,772 - ERROR - Failed to send WhatsApp alert for Order ID: 76. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-26 06:52:11,495 - INFO - Attempting to send WhatsApp alert for Order ID: 77 to whatsapp:+919999999999
+2025-10-26 06:52:11,728 - ERROR - Failed to send WhatsApp alert for Order ID: 77. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-26 06:56:46,033 - INFO - Attempting to send WhatsApp alert for Order ID: 78 to whatsapp:+919999999999
+2025-10-26 06:56:46,176 - ERROR - Failed to send WhatsApp alert for Order ID: 78. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-26 07:17:18,460 - INFO - Attempting to send WhatsApp alert for Order ID: 79 to whatsapp:+919999999999
+2025-10-26 07:17:18,581 - ERROR - Failed to send WhatsApp alert for Order ID: 79. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-28 07:18:57,765 - INFO - Attempting to send WhatsApp alert for Order ID: 80 to whatsapp:+919999999999
+2025-10-28 07:18:57,976 - ERROR - Failed to send WhatsApp alert for Order ID: 80. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-28 13:52:15,003 - INFO - Attempting to send WhatsApp alert for Order ID: 81 to whatsapp:+919999999999
+2025-10-28 13:52:15,136 - ERROR - Failed to send WhatsApp alert for Order ID: 81. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-28 13:52:57,733 - INFO - Attempting to send WhatsApp alert for Order ID: 82 to whatsapp:+919999999999
+2025-10-28 13:52:57,784 - ERROR - Failed to send WhatsApp alert for Order ID: 82. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-28 13:55:42,252 - INFO - Attempting to send WhatsApp alert for Order ID: 83 to whatsapp:+919999999999
+2025-10-28 13:55:42,303 - ERROR - Failed to send WhatsApp alert for Order ID: 83. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-28 14:00:11,403 - INFO - Attempting to send WhatsApp alert for Order ID: 84 to whatsapp:+919999999999
+2025-10-28 14:00:11,504 - ERROR - Failed to send WhatsApp alert for Order ID: 84. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-28 14:01:37,398 - INFO - Attempting to send WhatsApp alert for Order ID: 85 to whatsapp:+919999999999
+2025-10-28 14:01:37,449 - ERROR - Failed to send WhatsApp alert for Order ID: 85. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-28 14:03:17,654 - INFO - Attempting to send WhatsApp alert for Order ID: 86 to whatsapp:+919999999999
+2025-10-28 14:03:17,710 - ERROR - Failed to send WhatsApp alert for Order ID: 86. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-29 13:28:59,386 - INFO - Attempting to send WhatsApp alert for Order ID: 87 to whatsapp:+919999999999
+2025-10-29 13:28:59,546 - ERROR - Failed to send WhatsApp alert for Order ID: 87. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-10-29 13:31:40,870 - INFO - Attempting to send WhatsApp alert for Order ID: 88 to whatsapp:+919999999999
+2025-10-29 13:31:40,923 - ERROR - Failed to send WhatsApp alert for Order ID: 88. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-03 11:25:35,045 - INFO - Attempting to send WhatsApp alert for Order ID: 89 to whatsapp:+919999999999
+2025-11-03 11:25:35,179 - ERROR - Failed to send WhatsApp alert for Order ID: 89. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-03 11:28:30,625 - INFO - Attempting to send WhatsApp alert for Order ID: 90 to whatsapp:+919999999999
+2025-11-03 11:28:30,678 - ERROR - Failed to send WhatsApp alert for Order ID: 90. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-03 11:31:53,471 - INFO - Attempting to send WhatsApp alert for Order ID: 91 to whatsapp:+919999999999
+2025-11-03 11:31:53,520 - ERROR - Failed to send WhatsApp alert for Order ID: 91. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-06 08:08:40,195 - INFO - Attempting to send WhatsApp alert for Order ID: 92 to whatsapp:+919999999999
+2025-11-06 08:08:40,337 - ERROR - Failed to send WhatsApp alert for Order ID: 92. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-06 08:11:38,724 - INFO - Attempting to send WhatsApp alert for Order ID: 93 to whatsapp:+919999999999
+2025-11-06 08:11:38,775 - ERROR - Failed to send WhatsApp alert for Order ID: 93. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-06 11:14:55,259 - INFO - Attempting to send WhatsApp alert for Order ID: 94 to whatsapp:+919999999999
+2025-11-06 11:14:55,392 - ERROR - Failed to send WhatsApp alert for Order ID: 94. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-06 11:20:23,063 - INFO - Attempting to send WhatsApp alert for Order ID: 95 to whatsapp:+919999999999
+2025-11-06 11:20:23,221 - ERROR - Failed to send WhatsApp alert for Order ID: 95. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-06 11:23:18,088 - INFO - Attempting to send WhatsApp alert for Order ID: 96 to whatsapp:+919999999999
+2025-11-06 11:23:18,151 - ERROR - Failed to send WhatsApp alert for Order ID: 96. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-06 14:01:31,380 - INFO - Attempting to send WhatsApp alert for Order ID: 97 to whatsapp:+919999999999
+2025-11-06 14:01:31,533 - ERROR - Failed to send WhatsApp alert for Order ID: 97. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-06 14:02:41,299 - INFO - Attempting to send WhatsApp alert for Order ID: 98 to whatsapp:+919999999999
+2025-11-06 14:02:41,352 - ERROR - Failed to send WhatsApp alert for Order ID: 98. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-06 14:05:30,883 - INFO - Attempting to send WhatsApp alert for Order ID: 99 to whatsapp:+919999999999
+2025-11-06 14:05:30,937 - ERROR - Failed to send WhatsApp alert for Order ID: 99. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-08 12:50:27,388 - INFO - Attempting to send WhatsApp alert for Order ID: 100 to whatsapp:+919999999999
+2025-11-08 12:50:27,523 - ERROR - Failed to send WhatsApp alert for Order ID: 100. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-09 10:36:21,484 - INFO - Attempting to send WhatsApp alert for Order ID: 101 to whatsapp:+919999999999
+2025-11-09 10:36:21,616 - ERROR - Failed to send WhatsApp alert for Order ID: 101. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-09 11:04:05,801 - INFO - Attempting to send WhatsApp alert for Order ID: 102 to whatsapp:+919999999999
+2025-11-09 11:04:06,002 - ERROR - Failed to send WhatsApp alert for Order ID: 102. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-10 14:07:05,331 - INFO - Attempting to send WhatsApp alert for Order ID: 103 to whatsapp:+919999999999
+2025-11-10 14:07:05,466 - ERROR - Failed to send WhatsApp alert for Order ID: 103. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-10 14:07:32,456 - INFO - Attempting to send WhatsApp alert for Order ID: 104 to whatsapp:+919999999999
+2025-11-10 14:07:32,507 - ERROR - Failed to send WhatsApp alert for Order ID: 104. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-11 14:00:19,798 - INFO - Attempting to send WhatsApp alert for Order ID: 105 to whatsapp:+919999999999
+2025-11-11 14:00:19,937 - ERROR - Failed to send WhatsApp alert for Order ID: 105. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-12 08:30:29,718 - INFO - Attempting to send WhatsApp alert for Order ID: 106 to whatsapp:+919999999999
+2025-11-12 08:30:29,889 - ERROR - Failed to send WhatsApp alert for Order ID: 106. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-12 12:47:32,714 - INFO - Attempting to send WhatsApp alert for Order ID: 107 to whatsapp:+919999999999
+2025-11-12 12:47:32,858 - ERROR - Failed to send WhatsApp alert for Order ID: 107. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-12 13:55:03,579 - INFO - Attempting to send WhatsApp alert for Order ID: 108 to whatsapp:+919999999999
+2025-11-12 13:55:03,733 - ERROR - Failed to send WhatsApp alert for Order ID: 108. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-12 14:03:54,836 - INFO - Attempting to send WhatsApp alert for Order ID: 109 to whatsapp:+919999999999
+2025-11-12 14:03:54,939 - ERROR - Failed to send WhatsApp alert for Order ID: 109. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-13 05:19:11,738 - INFO - Attempting to send WhatsApp alert for Order ID: 110 to whatsapp:+919999999999
+2025-11-13 05:19:11,895 - ERROR - Failed to send WhatsApp alert for Order ID: 110. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-13 13:30:27,798 - INFO - Attempting to send WhatsApp alert for Order ID: 111 to whatsapp:+919999999999
+2025-11-13 13:30:27,949 - ERROR - Failed to send WhatsApp alert for Order ID: 111. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-14 11:32:45,532 - INFO - Attempting to send WhatsApp alert for Order ID: 112 to whatsapp:+919999999999
+2025-11-14 11:32:45,672 - ERROR - Failed to send WhatsApp alert for Order ID: 112. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-14 12:16:23,608 - INFO - Attempting to send WhatsApp alert for Order ID: 113 to whatsapp:+919999999999
+2025-11-14 12:16:23,748 - ERROR - Failed to send WhatsApp alert for Order ID: 113. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-14 12:22:20,476 - INFO - Attempting to send WhatsApp alert for Order ID: 114 to whatsapp:+919999999999
+2025-11-14 12:22:20,583 - ERROR - Failed to send WhatsApp alert for Order ID: 114. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-14 12:24:18,445 - INFO - Attempting to send WhatsApp alert for Order ID: 115 to whatsapp:+919999999999
+2025-11-14 12:24:18,500 - ERROR - Failed to send WhatsApp alert for Order ID: 115. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-14 12:44:11,911 - INFO - Attempting to send WhatsApp alert for Order ID: 116 to whatsapp:+919999999999
+2025-11-14 12:44:12,042 - ERROR - Failed to send WhatsApp alert for Order ID: 116. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-14 12:49:35,297 - INFO - Attempting to send WhatsApp alert for Order ID: 117 to whatsapp:+919999999999
+2025-11-14 12:49:35,457 - ERROR - Failed to send WhatsApp alert for Order ID: 117. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-14 12:49:36,528 - INFO - Attempting to send WhatsApp alert for Order ID: 118 to whatsapp:+919999999999
+2025-11-14 12:49:36,596 - ERROR - Failed to send WhatsApp alert for Order ID: 118. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-15 11:28:43,464 - INFO - Attempting to send WhatsApp alert for Order ID: 119 to whatsapp:+919999999999
+2025-11-15 11:28:43,634 - ERROR - Failed to send WhatsApp alert for Order ID: 119. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-16 12:11:01,339 - INFO - Attempting to send WhatsApp alert for Order ID: 120 to whatsapp:+919999999999
+2025-11-16 12:11:01,534 - ERROR - Failed to send WhatsApp alert for Order ID: 120. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-16 12:11:41,262 - INFO - Attempting to send WhatsApp alert for Order ID: 121 to whatsapp:+919999999999
+2025-11-16 12:11:41,317 - ERROR - Failed to send WhatsApp alert for Order ID: 121. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-16 13:09:11,961 - INFO - Attempting to send WhatsApp alert for Order ID: 122 to whatsapp:+919999999999
+2025-11-16 13:09:12,162 - ERROR - Failed to send WhatsApp alert for Order ID: 122. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-17 08:22:31,510 - INFO - Attempting to send WhatsApp alert for Order ID: 123 to whatsapp:+919999999999
+2025-11-17 08:22:31,672 - ERROR - Failed to send WhatsApp alert for Order ID: 123. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-18 04:19:14,598 - INFO - Attempting to send WhatsApp alert for Order ID: 124 to whatsapp:+919999999999
+2025-11-18 04:19:14,744 - ERROR - Failed to send WhatsApp alert for Order ID: 124. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+2025-11-20 13:09:54,309 - INFO - Attempting to send WhatsApp alert for Order ID: 125 to whatsapp:+919999999999
+2025-11-20 13:09:54,449 - ERROR - Failed to send WhatsApp alert for Order ID: 125. Error: HTTP 401 error: Unable to create record: Authentication Error - invalid username
+Traceback (most recent call last):
+  File "/home/harshuldbt/crm/app.py", line 77, in send_whatsapp_alert
+    message = twilio_client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM, body=message_body, to=ADMIN_WHATSAPP_TO)
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/rest/api/v2010/account/message/__init__.py", line 589, in create
+    payload = self._version.create(
+        method="POST", uri=self._uri, data=data, headers=headers
+    )
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 463, in create
+    return self._parse_create(method, uri, response)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harshuldbt/crm/venv/lib/python3.13/site-packages/twilio/base/version.py", line 435, in _parse_create
+    raise self.exception(method, uri, response, "Unable to create record")
+twilio.base.exceptions.TwilioRestException: HTTP 401 error: Unable to create record: Authentication Error - invalid username

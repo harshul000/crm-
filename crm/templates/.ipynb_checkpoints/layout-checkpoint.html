@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CORRECTED: Typo in charset -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Admin Dashboard{% endblock %}</title>
+    <!-- ✅ Add these PWA tags -->
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ✅ iOS specific icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Admin">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='icons/icon-192.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    {% block head_extra %}{% endblock %}
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Admin Panel</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="{{ 'active' if request.endpoint == 'index' else '' }}"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+                    <li><a href="{{ url_for('products') }}" class="{{ 'active' if request.endpoint == 'products' else '' }}"><i class="fas fa-box"></i>Products</a></li>
+                    <li><a href="{{ url_for('orders') }}" class="{{ 'active' if request.endpoint == 'orders' else '' }}"><i class="fas fa-shopping-cart"></i>Orders</a></li>
+                    <li><a href="{{ url_for('calendar') }}" class="{{ 'active' if request.endpoint == 'calendar' else '' }}"><i class="fas fa-calendar-alt"></i>Calendar</a></li>
+                    <li><a href="{{ url_for('view_logs') }}" class="{{ 'active' if request.endpoint == 'view_logs' else '' }}"><i class="fas fa-file-alt"></i>View Logs</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="main-wrapper">
+            <header class="mobile-header">
+                <h1 id="mobile-page-title"></h1>
+                <button id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </header>
+
+            <main class="main-content">
+                <header class="main-header">
+                    <h1 id="desktop-page-title">{% block page_title %}{% endblock %}</h1>
+                </header>
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        <div class="flash-messages">
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }}">{{ message }}</div>
+                        {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+
+                {% block content %}{% endblock %}
+            </main>
+        </div>
+        <!-- NEW: Overlay for mobile menu -->
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+    <!-- UPDATED: More robust script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+
+            function closeMenu() {
+                sidebar.classList.remove('is-open');
+                overlay.classList.remove('is-visible');
+            }
+
+            if (menuToggle && sidebar && overlay) {
+                menuToggle.addEventListener('click', function() {
+                    sidebar.classList.toggle('is-open');
+                    overlay.classList.toggle('is-visible');
+                });
+
+                // Close menu when overlay is clicked
+                overlay.addEventListener('click', closeMenu);
+            }
+
+            // Copy desktop title to mobile header
+            const desktopTitleEl = document.getElementById('desktop-page-title');
+            const mobileTitleEl = document.getElementById('mobile-page-title');
+            if (desktopTitleEl && mobileTitleEl) {
+                mobileTitleEl.textContent = desktopTitleEl.textContent;
+            }
+        });
+    </script>
+    <script>
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/static/service-worker.js')
+    .then(() => console.log('Service worker registered'));
+}
+</script>
+
+</body>
+</html>
+

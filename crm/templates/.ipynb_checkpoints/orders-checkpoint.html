@@ -1,0 +1,98 @@
+{% extends 'layout.html' %}
+
+{% block title %}Manage Orders{% endblock %}
+{% block page_title %}Order Management{% endblock %}
+
+{% block content %}
+<div class="content-section">
+    <h2>Create New Order</h2>
+    <div class="form-card">
+        <form action="{{ url_for('orders') }}" method="post">
+            <div class="form-group">
+                <label for="product_id">Select Product</label>
+                <select id="product_id" name="product_id" required>
+                    {% for p in products %}
+                    <option value="{{ p.id }}">{{ p.name }} - ₹{{ "%.2f"|format(p.price) }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="customer_name">Customer Name</label>
+                <input type="text" id="customer_name" name="customer_name" required>
+            </div>
+            <!-- NEW (MOBILE NUMBER): Added an input field for the customer's mobile number -->
+            <div class="form-group">
+                <label for="customer_mobile">Customer Mobile (Optional)</label>
+                <input type="tel" id="customer_mobile" name="customer_mobile">
+            </div>
+            <div class="form-group">
+                <label for="total_amount">Total Order Amount</label>
+                <input type="number" id="total_amount" name="total_amount" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="advance_paid">Advance Paid</label>
+                <input type="number" id="advance_paid" name="advance_paid" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery_date">Delivery Date (Optional)</label>
+                <input type="date" id="delivery_date" name="delivery_date">
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Create Order</button>
+        </form>
+    </div>
+</div>
+
+<div class="content-section">
+    <h2>Existing Orders</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product</th>
+                    <th>Customer</th>
+                    <!-- NEW (MOBILE NUMBER): Added a table header for the mobile number -->
+                    <th>Customer Mobile</th>
+                    <th>Total</th>
+                    <th>Advance</th>
+                    <th>Remaining</th>
+                    <th>Delivery Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr>
+                    <td>#{{ order.id }}</td>
+                    <td class="product-cell">
+                        {% if order.product and order.product.image_filename %}
+                        <img src="{{ url_for('uploaded_file', filename=order.product.image_filename) }}" alt="{{ order.product.name }}" class="product-image-thumb">
+                        {% endif %}
+                        <span>{{ order.product.name if order.product else 'N/A' }}</span>
+                    </td>
+                    <td>{{ order.customer_name }}</td>
+                    <!-- NEW (MOBILE NUMBER): Added a table cell to display the mobile number -->
+                    <td>{{ order.customer_mobile or 'N/A' }}</td>
+                    <td>₹{{ "%.2f"|format(order.total_amount) }}</td>
+                    <td>₹{{ "%.2f"|format(order.advance_paid) }}</td>
+                    <td>₹{{ "%.2f"|format(order.amount_remaining) }}</td>
+                    <td>{{ order.delivery_date.strftime('%Y-%m-%d') if order.delivery_date else 'N/A' }}</td>
+                    <td><span class="status-pending">{{ order.status }}</span></td>
+                    <td>
+                        <form action="{{ url_for('delete_order', order_id=order.id) }}" method="post" onsubmit="return confirm('Are you sure you want to delete this order?');">
+                            <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                        </form>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="10" style="text-align: center;">No orders found.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+

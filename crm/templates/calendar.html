@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block title %}Order Calendar{% endblock %}
+{% block page_title %}Order Delivery Calendar{% endblock %}
+
+{% block content %}
+<div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg">
+    <!-- This div will hold the calendar -->
+    <div id="calendar"></div>
+</div>
+
+<!-- Add FullCalendar JS library -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js"></script>
+
+<script>
+    // Wait for the DOM to be fully loaded before initializing the calendar
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            // Set the initial view to month
+            initialView: 'dayGridMonth',
+            // Configure the header buttons
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,listWeek'
+            },
+            // Fetch events from our new API endpoint
+            events: '/api/orders',
+            // Make events clickable
+            eventClick: function(info) {
+                alert(
+                    'Order Details:\n' +
+                    'Customer: ' + info.event.title + '\n' +
+                    'Product: ' + info.event.extendedProps.product + '\n' +
+                    'Total: ' + info.event.extendedProps.total
+                );
+            },
+            // Prettify the display
+            height: 'auto'
+        });
+
+        // Render the calendar
+        calendar.render();
+    });
+</script>
+{% endblock %}
